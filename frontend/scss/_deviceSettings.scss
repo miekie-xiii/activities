@@ -1,0 +1,8 @@
+@mixin screen($size) {
+    @if $size == mobile {
+      @media( max-width: 600px) { @content; }
+    }
+    @else if $size == desktop {
+      @media( min-width: 1000px) { @content; }
+    }
+  }

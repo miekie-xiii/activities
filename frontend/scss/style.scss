@@ -1,5 +1,5 @@
 @import './_variables.scss';
-
+@import './deviceSettings.scss';
 body {
   background: #f5f5f5;
 
@@ -59,4 +59,59 @@ body {
   width: auto;
 }
 
-@import './deviceSettings.scss';
+
+@include screen(mobile) {
+
+  .navHeader {
+      .nav {
+      height: 70px;
+      }
+  }
+  
+  .heroBanner {
+      height: 300px;
+  }
+  
+  .features {
+      flex-direction: column;
+      background: none;
+  
+      .feat0,
+      .feat1,
+      .feat2,
+      .feat3 {
+      margin: 10px 0 0 0;
+      width: 100%;
+      background: $bg2;
+      }
+  }
+  
+  .content {
+      flex-direction: column;
+  
+          .cont0,
+          .cont1 {
+          width: 100%;
+          margin: 5px 0;
+          }
+      }
+  
+      .footer {
+          height: 250px;
+      }
+  }
+  
+  @include screen(desktop) {
+  
+      .features {
+          flex-direction: row;
+      }
+  
+      .content {
+          flex-direction: row;
+      }
+  
+      .heroBanner {
+          height: 600px;
+      }
+  }
