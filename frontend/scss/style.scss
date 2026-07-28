@@ -1,0 +1,88 @@
+$primary: #3498db;
+$bg0: #2c2b34;
+$bg1: #a9016e;
+$bg2: #d8307f;
+$bg3: #dc5d9f;
+$bg4: #eb7bb5;
+
+body {
+  background: #f5f5f5;
+
+  h1 {
+    color: $primary;
+  }
+}
+
+.navHeader {
+  background: $bg0;
+  .nav {
+    height: 100px;
+    width: auto;
+  }
+}
+
+.heroBanner {
+  margin: 10px 0 0 0;
+  background: $bg1;
+  height: 600px;
+  width: auto;
+}
+
+@mixin cusDisplay {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 0 0;
+}
+.features {
+  @include cusDisplay;
+
+  $locHeight: 20rem;
+  $locWidth: 30rem;
+
+  @mixin locSetting($t, $r, $b, $l) {
+    margin: $t $r $b $l;
+    background: $bg2;
+    height: $locHeight;
+    width: $locWidth;
+  }
+
+  .feat0 {
+    @include locSetting(0, 5px, 0, 0);
+  }
+  .feat1 {
+    @include locSetting(0, 5px, 0, 5px);
+  }
+  .feat2 {
+    @include locSetting(0, 5px, 0, 5px);
+  }
+  .feat3 {
+    @include locSetting(0, 0, 0, 5px);
+  }
+}
+
+.content {
+  @include cusDisplay;
+
+  $locHeight: 30rem;
+  $locWidth: 58rem;
+
+  @mixin locSetting($t, $r, $b, $l) {
+    margin: $t $r $b $l;
+    background: $bg3;
+    height: $locHeight;
+    width: $locWidth;  
+  }
+  .cont0 {
+    @include locSetting(0, 5px, 0, 0);
+  }
+  .cont1 {
+    @include locSetting(0, 0, 0, 5px);
+  }
+}
+
+.footer {
+  margin: 10px 0 0 0;
+  background: $bg4;
+  height: 400px;
+  width: auto;
+}

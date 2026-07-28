@@ -1,0 +1,78 @@
+body {
+  background: #f5f5f5;
+}
+body h1 {
+  color: #3498db;
+}
+
+.navHeader {
+  background: #2c2b34;
+}
+.navHeader .nav {
+  height: 100px;
+  width: auto;
+}
+
+.heroBanner {
+  margin: 10px 0 0 0;
+  background: #a9016e;
+  height: 600px;
+  width: auto;
+}
+
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 0 0;
+}
+.features .feat0 {
+  margin: 0 5px 0 0;
+  background: #d8307f;
+  height: 20rem;
+  width: 30rem;
+}
+.features .feat1 {
+  margin: 0 5px 0 5px;
+  background: #d8307f;
+  height: 20rem;
+  width: 30rem;
+}
+.features .feat2 {
+  margin: 0 5px 0 5px;
+  background: #d8307f;
+  height: 20rem;
+  width: 30rem;
+}
+.features .feat3 {
+  margin: 0 0 0 5px;
+  background: #d8307f;
+  height: 20rem;
+  width: 30rem;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0 0 0;
+}
+.content .cont0 {
+  margin: 0 5px 0 0;
+  background: #dc5d9f;
+  height: 30rem;
+  width: 58rem;
+}
+.content .cont1 {
+  margin: 0 0 0 5px;
+  background: #dc5d9f;
+  height: 30rem;
+  width: 58rem;
+}
+
+.footer {
+  margin: 10px 0 0 0;
+  background: #eb7bb5;
+  height: 400px;
+  width: auto;
+}
+
+/*# sourceMappingURL=style.css.map */
