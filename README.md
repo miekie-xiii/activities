@@ -1,1 +1,1 @@
-# sassResponsiveLandingPage
+# activities
